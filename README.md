@@ -2,8 +2,6 @@
 
 Дообучение языковой модели [`cointegrated/rubert-tiny2`](https://huggingface.co/cointegrated/rubert-tiny2) для классификации русскоязычных отзывов на три класса: **negative**, **neutral**, **positive**.
 
-Автор: [ФИО, группа]
-
 ## Данные
 
 - Набор: [`mteb/RuReviewsClassification`](https://huggingface.co/datasets/mteb/RuReviewsClassification), версия корпуса RuReviews (отзывы на товары), 62 048 отзывов, классы сбалансированы.
@@ -62,7 +60,6 @@ python train.py
 
 ## Использование обученной модели
 
-Модель: [ссылка на модель, GitHub LFS или Hugging Face Hub]
 
 ```python
 from transformers import pipeline
@@ -84,8 +81,3 @@ README.md
 
 - Обучение шло на отзывах о товарах (в основном одежда и аксессуары), на текстах других жанров качество может быть ниже.
 - Для обучения использована подвыборка из 30 000 примеров и компактная модель; `rubert-base-cased` и полный набор данных, вероятно, дадут более высокую точность.
-
-## Материалы
-
-- Презентация: [ссылка]
-- Видео-демонстрация (по желанию): [ссылка]
